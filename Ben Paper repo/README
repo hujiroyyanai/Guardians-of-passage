@@ -1,0 +1,42 @@
+# Modelling Trigeminal Projection Neurons
+
+This project aims to model trigeminal projection neurons using NEURON, a simulation environment for neural networks.
+
+## Overview
+
+The goal of this project is to understand the behavior and properties of trigeminal projection neurons through computational modeling. By simulating the electrical activity of these neurons, we can gain insights into their firing patterns, synaptic connections, and response to various stimuli.
+
+## Installation
+
+To run the simulations and experiments in this project, you will need to install NEURON. Follow the instructions below to set up the environment:
+
+1. Download NEURON from the official website (https://www.neuron.yale.edu/neuron/download).
+2. Install NEURON according to the provided instructions for your operating system.
+3. Verify the installation by running a simple NEURON script.
+
+## Usage
+
+To use this project, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Open NEURON and load the project files.
+3. Modify the parameters and settings as needed for your experiments.
+4. Run the simulations and analyze the results.
+5. Repeat steps 3-4 to explore different scenarios and hypotheses.
+
+## Contributing
+
+Contributions to this project are welcome. If you would like to contribute, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and test them thoroughly.
+4. Submit a pull request, describing your changes and their purpose.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for academic and non-commercial purposes.
+
+## Contact
+
+If you have any questions or suggestions regarding this project, please contact the project maintainer at [email protected]

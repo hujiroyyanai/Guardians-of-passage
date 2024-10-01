@@ -1,0 +1,176 @@
+./AMPA_DynSyn.c: ../mods/AMPA_DynSyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "AMPA_DynSyn.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./AMPA_DynSyn.o: ./AMPA_DynSyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./B_A.c: ../mods/B_A.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "B_A.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./B_A.o: ./B_A.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./B_DR.c: ../mods/B_DR.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "B_DR.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./B_DR.o: ./B_DR.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./B_NA.c: ../mods/B_NA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "B_NA.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./B_NA.o: ./B_NA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./CaIntraCellDyn.c: ../mods/CaIntraCellDyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CaIntraCellDyn.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./CaIntraCellDyn.o: ./CaIntraCellDyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./GABAa_DynSyn.c: ../mods/GABAa_DynSyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "GABAa_DynSyn.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./GABAa_DynSyn.o: ./GABAa_DynSyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./GABAb_DynSyn.c: ../mods/GABAb_DynSyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "GABAb_DynSyn.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./GABAb_DynSyn.o: ./GABAb_DynSyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./Glycine_DynSyn.c: ../mods/Glycine_DynSyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Glycine_DynSyn.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./Glycine_DynSyn.o: ./Glycine_DynSyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./HH2.c: ../mods/HH2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "HH2.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./HH2.o: ./HH2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./HH2new.c: ../mods/HH2new.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "HH2new.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./HH2new.o: ./HH2new.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./KDR.c: ../mods/KDR.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "KDR.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./KDR.o: ./KDR.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./KDRI.c: ../mods/KDRI.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "KDRI.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./KDRI.o: ./KDRI.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./NK1_DynSyn.c: ../mods/NK1_DynSyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NK1_DynSyn.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./NK1_DynSyn.o: ./NK1_DynSyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./NMDA_DynSyn.c: ../mods/NMDA_DynSyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NMDA_DynSyn.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./NMDA_DynSyn.o: ./NMDA_DynSyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./SS.c: ../mods/SS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SS.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./SS.o: ./SS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./borgka.c: ../mods/borgka.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "borgka.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./borgka.o: ./borgka.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./iCaAN.c: ../mods/iCaAN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iCaAN.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./iCaAN.o: ./iCaAN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./iCaL.c: ../mods/iCaL.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iCaL.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./iCaL.o: ./iCaL.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./iKCa.c: ../mods/iKCa.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iKCa.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./iKCa.o: ./iKCa.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./iNaP.c: ../mods/iNaP.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iNaP.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./iNaP.o: ./iNaP.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./vecevent.c: ../mods/vecevent.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vecevent.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./vecevent.o: ./vecevent.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
+./vsource.c: ../mods/vsource.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vsource.mod" -o "/Users/royyanai/Documents/repos/repo_with_michael/arm64")
+
+./vsource.o: ./vsource.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mods" $(INCLUDES) -fPIC -c $< -o $@
+
