@@ -6,10 +6,11 @@ from main import PointNeuron , PointNeuron_2
 import pandas as pd
 import numpy as np
 
-
+#code for working with mods files
 def transform_a0l_to_tau(a0l):
     return 1/(a0l*2*(3**0.7))
-
+    
+#code for working with mods files
 def transform_tau_to_a0l(tau):
     return 1/(tau*2*(3**0.7))
 
@@ -22,7 +23,6 @@ def check_validity(simulated_value,valid_range):
         return True
 
 
- 
 
 def validate_firing_charactaristics(cell,amp,latency_valid_range,frequency_valid_range):
     h.dt = 0.025
@@ -257,32 +257,6 @@ def calc_curves_with_inflamation(cell,amp_range):
                 inst_f.append(mean)
             else:
                 inst_f.append(float('nan'))                
-
-       
-            #addad code for half width parameters
-            # if(inflamation==0 and amp==0.08) or (inflamation==1 and amp==0.1) :  
-                
-            #     spike_index=40*int(spike_times.x[0])
-            #     pre_spike_trace=np.array(v_vec.x)[:spike_index+200]
-            #     pre_spike_trace_diff=pre_spike_trace[1:]-pre_spike_trace[:-1]
-            #     #0.2= 8 x 0.025
-            #     real_spike_index=np.argmax(pre_spike_trace_diff>0.2)
-            #     max_spike_index=np.argmax(pre_spike_trace)
-
-            #     real_spike_voltage=v_vec.x[real_spike_index]
-            #     max_spike_voltage=v_vec.x[max_spike_index]
-
-            #     half_width_voltage=(real_spike_voltage+max_spike_voltage)/2
-            #     half_width_index=np.argmin(np.abs(pre_spike_trace[:max_spike_index]-half_width_voltage))
-
-            #     second_half_width_index=np.argmin(np.abs(pre_spike_trace[max_spike_index:]-half_width_voltage))
-
-            #     print(real_spike_voltage)
-            #     print(max_spike_voltage)
-            #     print(half_width_voltage)
-            #     print(pre_spike_trace[half_width_index])
-            #     print(pre_spike_trace[second_half_width_index+max_spike_index])
-            #     print(second_half_width_index+max_spike_index-half_width_index)
                 
 
             if 0.08<=amp and amp<=0.12 :
@@ -298,7 +272,6 @@ def calc_curves_with_inflamation(cell,amp_range):
         data_dict['frequencies'][inflamation]=f
         data_dict['latancies'][inflamation]=l
         data_dict['inst_frequencies'][inflamation]=inst_f
-    #plt.savefig('/Users/royyanai/Documents/Ben_traces.eps',format='eps')  
     plt.show()
     return data_dict
 
@@ -362,7 +335,6 @@ def calc_vhalf_param_sweep(cell,amp_range,vhalf_params):
     axs[1].set_yticklabels(vhalf_params)
     axs[1].set_xticklabels(amp_range)
     fig.colorbar(axs[1].pcolor(latancies,cmap='Reds_r'),label='Latancy (ms)')
-    #plt.savefig('/Users/royyanai/Documents/Ben_Heat_Maps.eps',format='eps')
     plt.show()
     
 
@@ -392,10 +364,9 @@ def plot_IF_and_latancy(data_dict,amp_range):
     axs[2].scatter(x=amp_range,y=data_dict['latancies'][1],color='red')
     axs[2].plot(amp_range,data_dict['latancies'][1],color='red')
     axs[2].set_title('latancy')
-    plt.savefig('/Users/royyanai/Documents/Ben_FI_latancy.eps',format='eps')
     plt.show()
 
-  
+#these lines of code are for running the simulations presented in the paper  
 toy_cell=PointNeuron()
 
 
